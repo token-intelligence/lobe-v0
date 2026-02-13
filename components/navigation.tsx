@@ -28,12 +28,20 @@ export function Navigation() {
           )}
         </ul>
 
-        <a
-          href="#pricing"
-          className="hidden rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 md:inline-block"
-        >
-          Join Waitlist
-        </a>
+        <div className="hidden items-center gap-3 md:flex">
+          <a
+            href="/auth/login"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Sign In
+          </a>
+          <a
+            href="/auth/sign-up"
+            className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Get Started
+          </a>
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -78,11 +86,18 @@ export function Navigation() {
             )}
           </ul>
           <a
-            href="#pricing"
+            href="/auth/login"
             onClick={() => setMobileOpen(false)}
-            className="mt-4 block rounded-md bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            className="mt-4 block text-center text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            Join Waitlist
+            Sign In
+          </a>
+          <a
+            href="/auth/sign-up"
+            onClick={() => setMobileOpen(false)}
+            className="mt-2 block rounded-md bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Get Started
           </a>
         </div>
       )}
