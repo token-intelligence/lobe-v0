@@ -1,7 +1,23 @@
+import { Navigation } from "@/components/navigation";
+import { Hero } from "@/components/hero";
+import { HowItWorks } from "@/components/how-it-works";
+import { Features } from "@/components/features";
+import { Integrations } from "@/components/integrations";
+import { Pricing } from "@/components/pricing";
+import { Footer } from "@/components/footer";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <h1 className="font-serif text-5xl text-foreground">Lobe</h1>
-    </main>
+    <>
+      <Navigation />
+      <main>
+        <Hero />
+        <HowItWorks />
+        <Features />
+        <Integrations />
+        <Pricing />
+      </main>
+      <Footer />
+    </>
   );
 }
