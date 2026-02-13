@@ -9,6 +9,8 @@ export function Hero() {
           src="/images/lobe-hero.jpg"
           alt=""
           fill
+          sizes="100vw"
+          loading="eager"
           className="object-cover opacity-40"
           priority
         />
